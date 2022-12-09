@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User App | Table</title>
+</head>
+<body>
+    <a href="./index.html">Back</a>
+    <form method="get" action="">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="bornBefore">Born Before</label>
+        <input type="date" name="bornBefore" id="bornBefore">
+
+        <label for="beforeTime">Before Time</label>
+        <input type="time" name="beforeTime" id="beforeTime">
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="F"> Female
+        <input type="radio" name="gender" value="M"> Male
+
+        <label>Education</label>
+        <input type="checkbox" name="education[]" value="HGSC"> High school
+        <input type="checkbox" name="education[]" value="Bac"> Bachelor
+        <input type="checkbox" name="education[]" value="Msc"> Master
+
+        <label for="nationality">Nationality</label>
+        <select name="nationality" id="nationality">
+            <option value=""></option>
+            <option value="sq">Shqiptar/e</option>
+            <option value="ks" selected>Kosovar/e</option>
+            <option value="tj">Tjeter</option>
+        </select>
+
+        <label for="eyeColor">Eye color</label>
+        <input type="text" name="eyeColor" list="eyeColorOptions" id="eyeColor">
+        <datalist id="eyeColorOptions">
+            <option value="b">Blue</option>
+            <option value="bc">Black</option>
+            <option value="g">Green</option>
+            <option value="w">White</option>
+            <option value="br">Brown</option>
+        </datalist>
+
+<!--        <label for="nationality">Nationality</label>-->
+<!--        <select name="nationality" id="nationality" multiple>-->
+<!--            <option>Shqiptar/e</option>-->
+<!--            <option>Kosovar/e</option>-->
+<!--            <option>Tjeter</option>-->
+<!--        </select>-->
+
+        <input type="reset" name="action:reset" value="Reset">
+<!--        <button type="reset">Reset</button>-->
+
+        <input type="submit" name="filter" value="Filter">
+<!--        <button type="submit">Filter</button>-->
+    </form>
+</body>
+</html>
