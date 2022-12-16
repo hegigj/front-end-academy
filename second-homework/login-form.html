@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML | Login Form</title>
+</head>
+<body>
+    <main>
+        <a href="./index.html">
+            <button>Back</button>
+        </a>
+        <h3>Login Form</h3>
+        <form method="post" action="">
+            <label for="email">Gmail</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required pattern="[a-zA-Z\W]+@gamil\.com">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required minlength="8" maxlength="12" pattern="(?=.*[A-Z])(?=.*[0-9]).*">
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+</html>
