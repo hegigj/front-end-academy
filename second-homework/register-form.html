@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML | Register Form</title>
+</head>
+<body>
+  <main>
+    <a href="./index.html">
+      <button>Back</button>
+    </a>
+    <h3>Register Form</h3>
+    <form method="post" action="">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName" required minlength="5">
+      <br>
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName" required maxlength="10">
+      <br>
+      <label for="email">Gmail</label>
+      <input type="email" name="email" id="email" placeholder="example@gmail.com" required pattern="[a-zA-Z\W]+@gamil\.com">
+      <br>
+      <label for="mobileNo">Mobile Number</label>
+      <input type="text" name="mobilNo" id="mobileNo" placeholder="+3556XXXXXXXX or 06XXXXXXXX" required pattern="(\+355[0-9]{9})|(0[0-9]{9})">
+      <br>
+      <label>Gender</label>
+      <br>
+      <input type="radio" name="gender" id="genderMale" value="M" required><label for="genderMale">Male</label>
+      <input type="radio" name="gender" id="genderFemale" value="F" required><label for="genderFemale">Female</label>
+      <br>
+      <label for="birthDate">Birth Date</label>
+      <input type="date" name="birthDate" id="birthDate" required max="2004-12-31">
+      <br>
+      <label for="address">Address</label>
+      <input type="text" name="address" id="address" required pattern="(Rr\.)|(Rruga)">
+      <br>
+      <label for="city">City</label>
+      <input type="text" name="city" id="city" required>
+      <br>
+      <label for="zipCode">Zipcode</label>
+      <input type="number" name="zipCode" id="zipCode" required>
+      <br>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required minlength="8" maxlength="12" pattern="(?=.*[A-Z])(?=.*[0-9]).*">
+      <br>
+      <ul>
+        <li>Password must contain:</li>
+        <li>Min 1 upper case letter</li>
+        <li>Min 1 number</li>
+        <li>Min length 8 characters</li>
+        <li>Max length 12 characters</li>
+      </ul>
+      <br>
+      <button type="reset">Reset</button>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+</body>
+</html>
