@@ -9,3 +9,5 @@ Per te aksesuar kodin e seances se katert/peste ju lutem aksesoni branch-in: [HT
 Per te aksesuar kodin e seances se gjashte(detyres) ju lutem aksesoni branch-in: [HTML: Seanca 6](https://github.com/hegigj/front-end-academy/tree/second-homework)
 
 Per te aksesuar kodin e seances se shtate ju lutem aksesoni branch-in: [HTML: Seanca 7](https://github.com/hegigj/front-end-academy/tree/css-prperties-and-selectors)
+
+Per te aksesuar kodin e seances se tete ju lutem aksesoni branch-in: [HTML: Seanca 8](https://github.com/hegigj/front-end-academy/tree/css-media-query)
