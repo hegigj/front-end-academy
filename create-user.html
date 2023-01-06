@@ -3,69 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <title>User App | Create</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <style>
-        input {
-            width: 120px;
+        form[method="post"] > div:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+        .modal.show {
+            backdrop-filter: blur(2px);
         }
     </style>
 </head>
 <body>
-    <a href="./index.html">Back</a>
-    <h2>Creat new user</h2>
-    <form method="post" action="">
-        <label for="firstName">First Name</label>
-        <input
-                type="text"
-                name="firstName"
-                id="firstName"
-                minlength="3"
-                required
-        >
-        <br>
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand">User App</a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Create User</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-md-4 col-md-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Creat new user</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="" class="needs-validation was-validated" novalidate>
+                            <div>
+                                <label for="firstName" class="form-label">First Name</label>
+                                <div class="input-group">
+                                    <input
+                                            type="text"
+                                            name="firstName"
+                                            class="form-control"
+                                            id="firstName"
+                                            minlength="3"
+                                            required
+                                    >
+                                    <button type="button" data-bs-toggle="modal"  data-bs-target="#infoIdCard" class="input-group-text" id="inputGroupPrepend">!</button>
+                                </div>
+                                <div class="invalid-feedback">
+                                    First name is required, and it accepts min 3 characters!
+                                </div>
+                            </div>
+                            <div>
+                                <label for="mobileNo" class="form-label">Mobile No.</label>
+                                <input
+                                        type="text"
+                                        name="mobileNo"
+                                        class="form-control"
+                                        id="mobileNo"
+                                        placeholder="+355xxxxxxxxx"
+                                        required
+                                        pattern="(\+[0-9]{1,3}[0-9]{9})|(0[0-9]{9})"
+                                >
+                            </div>
 
-        <label for="mobileNo">Mobile No.</label>
-        <input
-                type="text"
-                name="mobileNo"
-                id="mobileNo"
-                placeholder="+355xxxxxxxxx"
-                required
-                pattern="(\+[0-9]{1,3}[0-9]{9})|(0[0-9]{9})"
-        >
-        <br>
+                            <div>
+                                <label class="form-label">Gender</label>
+                                <div class="form-check">
+                                    <input type="radio" name="gender" class="form-check-input" id="genderMale" value="M">
+                                    <label for="genderMale" class="form-check-label">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="gender" class="form-check-input" id="genderFemale" value="F">
+                                    <label for="genderFemale" class="form-check-label">Female</label>
+                                </div>
+                            </div>
 
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" required min="18" step="1" max="99">
-        <br>
+                            <div>
+                                <label>Education</label>
+                                <div class="form-check">
+                                    <input type="checkbox" name="education[]" class="form-check-input" id="eduH" value="H" required>
+                                    <label for="eduH" class="form-check-label">High School</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="education[]" class="form-check-input" id="eduB" value="B">
+                                    <label for="eduB" class="form-check-label">Bachelor</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="education[]" class="form-check-input" id="eduM" value="M">
+                                    <label for="eduM" class="form-check-label">Master</label>
+                                </div>
+                            </div>
 
-        <label for="range">Age Range</label>
-        18 years <input type="range" name="age" id="range" min="18" max="21"> 21 years
-        <br>
+                            <div>
+                                <label for="range" class="form-label">Age Range (18 - 21 years)</label>
+                                <input type="range" name="age" class="form-range" id="range" min="18" max="21">
+                            </div>
 
-        <label for="bd">Birth Date</label>
-        <input type="date" name="bd" id="bd" min="2022-01-01" max="2023-12-31">
-        <br>
+                            <div>
+                                <label for="option" class="form-label">Options</label>
+                                <select name="option" class="form-select" id="option" required>
+                                    <option value="">Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
 
-        <label for="password">Password</label>
-        <input
-                type="password"
-                name="password"
-                id="password"
-                required
-                minlength="8"
-                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*"
-        >
-        <ul>
-            <li>Password must contain:</li>
-            <li>Min 1 upper case letter</li>
-            <li>Min 1 lower case letter</li>
-            <li>Min 1 number</li>
-            <li>Min 1 symbol</li>
-            <li>Min length 8 characters</li>
-        </ul>
-        <br>
+                            <label for="bd">Birth Date</label>
+                            <input type="date" name="bd" id="bd" min="2022-01-01" max="2023-12-31">
+                            <br>
 
-        <button type="submit">Save</button>
-    </form>
+                            <label for="password">Password</label>
+                            <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    required
+                                    minlength="8"
+                                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*"
+                            >
+                            <ul>
+                                <li>Password must contain:</li>
+                                <li>Min 1 upper case letter</li>
+                                <li>Min 1 lower case letter</li>
+                                <li>Min 1 number</li>
+                                <li>Min 1 symbol</li>
+                                <li>Min length 8 characters</li>
+                            </ul>
+                            <br>
+
+                            <button type="reset" class="btn btn-outline-danger">Reset</button>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal" id="infoIdCard">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Info</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/id-card-info.html" alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

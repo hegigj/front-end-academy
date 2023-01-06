@@ -11,3 +11,5 @@ Per te aksesuar kodin e seances se gjashte(detyres) ju lutem aksesoni branch-in:
 Per te aksesuar kodin e seances se shtate ju lutem aksesoni branch-in: [HTML: Seanca 7](https://github.com/hegigj/front-end-academy/tree/css-prperties-and-selectors)
 
 Per te aksesuar kodin e seances se tete ju lutem aksesoni branch-in: [HTML: Seanca 8](https://github.com/hegigj/front-end-academy/tree/css-media-query)
+
+Per te aksesuar kodin e seances se nente/dhjete ju lutem aksesoni branch-in: [HTML: Seanca 9/10](https://github.com/hegigj/front-end-academy/tree/bootstrap)
