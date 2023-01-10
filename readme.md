@@ -13,3 +13,5 @@ Per te aksesuar kodin e seances se shtate ju lutem aksesoni branch-in: [HTML: Se
 Per te aksesuar kodin e seances se tete ju lutem aksesoni branch-in: [HTML: Seanca 8](https://github.com/hegigj/front-end-academy/tree/css-media-query)
 
 Per te aksesuar kodin e seances se nente/dhjete ju lutem aksesoni branch-in: [HTML: Seanca 9/10](https://github.com/hegigj/front-end-academy/tree/bootstrap)
+
+Per te aksesuar kodin e seances se njembedhjete ju lutem aksesoni branch-in: [HTML: Seanca 11](https://github.com/hegigj/front-end-academy/tree/sass)
