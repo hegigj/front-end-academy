@@ -1,0 +1,18 @@
+// Variables in CSS
+//:root {
+//  --primary-color: teal;
+//  --accent-color: #446d8c;
+//  --warn-color: tomato;
+//}
+//
+// Variable usage in CSS
+//.header {
+//  color: var(--primary-color);
+//}
+$primary-color: teal;
+$accent-color: #446d8c;
+$warn-color: tomato;
+
+$text-color: gray;
+$text-size: 1rem;
+$text-font: Arial, 'sans-serif';
