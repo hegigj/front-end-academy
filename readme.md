@@ -14,4 +14,4 @@ Per te aksesuar kodin e seances se tete ju lutem aksesoni branch-in: [HTML: Sean
 
 Per te aksesuar kodin e seances se nente/dhjete ju lutem aksesoni branch-in: [HTML: Seanca 9/10](https://github.com/hegigj/front-end-academy/tree/bootstrap)
 
-Per te aksesuar kodin e seances se njembedhjete ju lutem aksesoni branch-in: [HTML: Seanca 11](https://github.com/hegigj/front-end-academy/tree/sass)
+Per te aksesuar kodin e seances se dymbedhjete ju lutem aksesoni branch-in: [HTML: Seanca 12](https://github.com/hegigj/front-end-academy/tree/js-syntax)
