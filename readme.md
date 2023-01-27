@@ -21,3 +21,5 @@ Per te aksesuar kodin e seances se trembedhjete/katermbedhjete ju lutem aksesoni
 Per te aksesuar kodin e seances se pesembedhjete ju lutem aksesoni branch-in: [HTML: Seanca 15](https://github.com/hegigj/front-end-academy/tree/dom)
 
 Per te aksesuar kodin e seances se gjashtembedhjete ju lutem aksesoni branch-in: [HTML: Seanca 16](https://github.com/hegigj/front-end-academy/tree/form-and-storage)
+
+Per te aksesuar kodin e seances se shtatembedhjete ju lutem aksesoni branch-in: [HTML: Seanca 17](https://github.com/hegigj/front-end-academy/tree/http-request)
