@@ -48,3 +48,8 @@ regionSelect.addEventListener('focus', async () => {
         alert('Regions could not be fetched!');
     }
 });
+
+// Beni funksional dropdown(select) per qytetet
+// Pasi te selektoni region ju duhet te beni enable cities dhe nu momentin kur
+// fokusojm cities ekzekutohet kergesa get cities dhe me pas populloni options
+// te dropdown-it
