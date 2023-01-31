@@ -16,3 +16,27 @@ function fillOptions(selectElement, options, emptySelectOption = undefined) {
         });
     }
 }
+
+function fillTable(tbodyElement, data, emptyRowColspan) {
+    tbodyElement.innerHTML = '';
+
+    if (data instanceof Array && data.length) {
+        data.forEach(rowData => {
+            const trEl = document.createElement('tr');
+            Object.keys(rowData).forEach(key => {
+                const tdEl = document.createElement('td');
+                tdEl.innerText = rowData[key];
+                trEl.appendChild(tdEl);
+            });
+            tbodyElement.appendChild(trEl);
+        })
+    } else {
+        const trEl = document.createElement('tr');
+        const tdEl = document.createElement('td');
+        tdEl.innerText = 'No data';
+        tdEl.colSpan = emptyRowColspan;
+        tdEl.style.textAlign = 'center';
+        trEl.appendChild(tdEl);
+        tbodyElement.appendChild(trEl);
+    }
+}

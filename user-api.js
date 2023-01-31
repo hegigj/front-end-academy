@@ -1,6 +1,34 @@
-const api = 'http://localhost:3000/users';
+// https://github.com/typicode/json-server
+const userApi = 'http://localhost:3000/users';
 
-async function createUser(user) {
+async function getUsersAPI(filters = undefined) {
+    let getUserApi = userApi;
+
+    if (filters && Object.keys(filters).length) {
+        getUserApi += '?';
+        getUserApi += Object.keys(filters).reduce(
+            (queryParamsString, key, i, array) => {
+                queryParamsString += `${key}=${filters[key]}`;
+                if (i < (array.length - 1)) {
+                    queryParamsString += '&';
+                }
+                return queryParamsString;
+            },
+            ''
+        );
+    }
+
+    const fetchObjectResponse = await fetch(getUserApi, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json'
+        },
+    });
+
+    return await fetchObjectResponse.json();
+}
+
+async function createUserAPI(user) {
     if (
         user &&
         user.firstName &&
@@ -8,7 +36,7 @@ async function createUser(user) {
         user.email &&
         user.gender
     ) {
-        const fetchObjectResponse = await fetch(api, {
+        const fetchObjectResponse = await fetch(userApi, {
             method: 'POST',
             body: JSON.stringify(user),
             headers: {
