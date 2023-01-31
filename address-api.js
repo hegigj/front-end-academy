@@ -45,3 +45,15 @@ async function getStatesAPI(accessToken, country) {
     });
     return await fetchObjectResponse.json();
 }
+
+async function getCitiesAPI(accessToken, state) {
+    const api = 'https://www.universal-tutorial.com/api/cities/' + state;
+    const fetchObjectResponse = await fetch(api, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Authorization': 'Bearer ' + accessToken
+        }
+    });
+    return await fetchObjectResponse.json();
+}

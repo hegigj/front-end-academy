@@ -1,13 +1,3 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "firstName": "Hegi",
-      "lastName": "Gjoka",
-      "gender": "MALE",
-      "country": "Albania",
-      "region": "",
-      "city": ""
-    }
-  ]
+  "users": []
 }
