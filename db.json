@@ -1,13 +1,28 @@
 {
   "users": [
     {
-      "id": 1,
+      "firstName": "Hegi",
+      "lastName": "gjoka",
+      "email": "hgjoka16@gmail.com",
+      "gender": "MALE",
+      "id": 5
+    },
+    {
+      "firstName": "Hegi",
+      "lastName": "gjoka",
+      "email": "hgjoka16@gmail.com",
+      "gender": "MALE",
+      "id": 6
+    },
+    {
       "firstName": "Hegi",
       "lastName": "Gjoka",
+      "email": "hgjoka16@gmail.com",
       "gender": "MALE",
       "country": "Albania",
-      "region": "",
-      "city": ""
+      "region": "Berat",
+      "city": "Berat",
+      "id": 7
     }
   ]
 }
